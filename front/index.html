@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo-wrapper">
+                <a href="/" class="logo">
+                    svg логотипа
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="min-nav__list">
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link">Каталог</a>
+                        <ul class="main-nav__sublist">
+                            <li class="main-nav__subitem">
+                                <a href="#" class="main-nav__sublink">Электроника</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link">Мои товары</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link">О сервисе</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link">Отзывы</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="#" class="main-nav__link">Блог</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="inout">
+                <!--Если неавторизированный пользователь-->
+                <button class="button btn__in">Войти</button>
+                <!--Если авторизированный как покупатель-->
+                <button class="button btn__avatar">
+                    <img src="./img/ava_mini.jpg" alt="" class="header-avatar">
+                </button>
+                <div class="user-info">
+                    <div class="user-info__wrapper">
+                        <div class="user-info__data">
+                            <ul class="user-info__list">
+                                <li class="user-info__list-item">
+                                    <strong>Иванов Иван</strong>
+                                </li>
+                                <li class="user-info__list-item">
+                                    <strong>Дата регистрации:</strong> <span>01.01.22</span>
+                                </li>
+                                <li class="user-info__list-item">
+                                    <strong>Баллы:</strong> <span>100 Б</span>
+                                </li>
+                                <li class="user-info__list-item">
+                                    <strong>Награды:</strong> <span><img src="./img/nagrad.png" alt=""></span>
+                                </li>
+                                <li class="user-info__list-item">
+                                    <strong>Сообщения:</strong> <span>2</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="user-info__foto">
+                            <div class="img-wrapper">
+                                <img src="./img/ava_mini.jpg" alt="" class="user-info__img">
+                            </div>
+                        </div>
+                        <div class="user-info__btn-panel">
+                            <a href="#" class="link-settings">Настройки</a>
+                            <button class="btn-exit">Выход</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Если авторизированный как продавец-->
+                <a href="#" class="button btn__avatar">
+                    <img src="./img/ava_magaz.jpg" alt="" class="header-avatar">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section slider">
+
+        </section>
+        <section class="section popular-goods">
+            <div class="container">
+                <h3 class="section-title">Популярные товары</h3>
+            </div>
+        </section>
+        <section class="section on-sale-soon">
+            <div class="container">
+                <h3 class="section-title">Скоро в продаже</h3>
+            </div>
+        </section>
+        <section class="section auction-finished">
+            <div class="container">
+                <h3 class="section-title">Аукцион завершен</h3>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <nav class="footer-nav">
+
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
