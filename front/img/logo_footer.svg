@@ -1,0 +1,53 @@
+<svg width="200" height="75" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="None" id="canvas_background" height="77" width="202" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <defs>
+   <path id="svg_10" d="m0,0z"/>
+   <path id="svg_11" d="m0,0z"/>
+   <path id="svg_12" d="m0,0z"/>
+   <style type="text/css">
+    <![CDATA[
+    @font-face { font-family:"Bahnschrift";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID2") format(svg)}
+    @font-face { font-family:"Berlin Sans FB";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID1") format(svg)}
+    @font-face { font-family:"Segoe Script";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
+    .fil3 {fill:#D9DADA}
+    .fil2 {fill:#D9DADA}
+    .fil1 {fill:#A82682}
+    .fil0 {fill:#AE4A84}
+    .fnt0 {font-weight:bold;font-size:617.3px;font-family:'Segoe Script'}
+    .fnt2 {font-weight:normal;font-size:1728.55px;font-family:'Bahnschrift'}
+    .fnt1 {font-weight:normal;font-size:1728.55px;font-family:'Berlin Sans FB'}
+    .fnt3 {font-weight:normal;font-size:1728.55px;font-family:'Berlin Sans FB'}
+   ]]>
+   </style>
+  </defs>
+  <g stroke="null" id="svg_21">
+   <g stroke="null" transform="matrix(0.0334665049761461,0,0,0.0334665049761461,-56012.278856343815,-38490.66636444006) " id="svg_6">
+    <metadata stroke="null" transform="translate(-18.219890594482422,-182.1988983154297) translate(27.82381248474121,-27.82381248474121) translate(-639.9476928710938,-1530.3096923828125) translate(-6659.74462890625,-7769.7021484375) translate(1678859.125,0) translate(0,1158217.75) " id="svg_8"/>
+    <g stroke="null" id="svg_7">
+     <g stroke="null" id="svg_13" transform="matrix(0.999989,0,0,1,-2972.41,956.575) ">
+      <text stroke="null" id="svg_14" class="fil0 fnt0" y="1151247.705448" x="1676667.446444">С нами дешевле !</text>
+     </g>
+     <g stroke="null" id="svg_15" transform="matrix(0.999989,0,0,1,-2876.51,94.8452) ">
+      <text stroke="null" id="svg_16" class="fil1 fnt1" y="1151247.705448" x="1676667.446444">e</text>
+     </g>
+     <g stroke="null" id="svg_17" transform="matrix(0.999989,0,0,1,-1862.63,109.02) ">
+      <text stroke="null" id="svg_18" class="fil2 fnt2" y="1151247.705448" x="1676667.446444">lmac</text>
+     </g>
+     <g stroke="null" id="svg_19" transform="matrix(0.999989,0,0,1,1991.03,94.8452) ">
+      <text stroke="null" id="svg_20" class="fil3 fnt3" y="1151247.705448" x="1676667.446444">e</text>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

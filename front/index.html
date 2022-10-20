@@ -1,49 +1,109 @@
 <!doctype html>
 <html lang="ru">
 <head>
+    <title>Document</title>
+
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="canonical" href="">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <script defer src="./js/main.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="container header__container">
+            <button aria-label="Открыть меню" class="burger-btn js-openmenu" data-addscript="./js/mobmenu.js" data-addstyle="./css/mobmenu.css">
+                <svg class="burger-btn__icon" viewBox="0 0 30 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="burger-btn__line burger-btn__line_line1" width="30" height="3"></rect>
+                    <rect class="burger-btn__line burger-btn__line_line2" width="23" height="3" y="8"></rect>
+                    <rect class="burger-btn__line burger-btn__line_line3" width="14" height="3" y="16"></rect>
+                </svg>
+            </button>
             <div class="logo-wrapper">
                 <a href="/" class="logo">
-                    svg логотипа
+                    <img class="logo__img" src="/img/logo.svg">
                 </a>
             </div>
-            <nav class="main-nav">
-                <ul class="min-nav__list">
-                    <li class="main-nav__item">
-                        <a href="#" class="main-nav__link">Каталог</a>
-                        <ul class="main-nav__sublist">
-                            <li class="main-nav__subitem">
-                                <a href="#" class="main-nav__sublink">Электроника</a>
+
+            <div class="blokmenu__container">
+                <div class="blokmenu__wrapper">
+                    <nav class="main-nav">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item">
+                                <a href="#" class="main-nav__link"><span class="main-nav__link-text">Каталог</span></a>
+                                <ul class="main-nav__sublist">
+                                    <li class="main-nav__sublist-item subgroup">
+                                        <a href="#" class="main-nav__sublink main-nav__sublink--title">Электроника</a>
+                                        <ul class="subgroup__list">
+                                            <li class="subgroup__item">
+                                                <a href="#" class="main-nav__sublink">Смартфоны</a>
+                                            </li>
+                                            <li class="subgroup__item">
+                                                <a href="#" class="main-nav__sublink">Ноутбуки</a>
+                                            </li>
+                                            <li class="subgroup__item">
+                                                <a href="#" class="main-nav__sublink">Планшеты</a>
+                                            </li>
+                                            <li class="subgroup__item">
+                                                <a href="#" class="main-nav__sublink">ПК</a>
+                                            </li>
+                                            <li class="subgroup__item">
+                                                <a href="#" class="main-nav__sublink">Умные часы</a>
+                                            </li>
+                                            <li class="subgroup__item">
+                                                <a href="#" class="main-nav__sublink">Умные колонки</a>
+                                            </li>
+                                            <li class="subgroup__item">
+                                                <a href="#" class="main-nav__sublink">Игровые консоли</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="main-nav__sublist-item subgroup">
+                                        <a href="#" class="main-nav__sublink main-nav__sublink--title">Спорт и отдых</a>
+                                        <ul class="subgroup__list">
+                                            <li class="subgroup__item">
+                                                <a href="#" class="main-nav__sublink">Электрические самокаты</a>
+                                            </li>
+                                            <li class="subgroup__item">
+                                                <a href="#" class="main-nav__sublink">Электровелосипеды</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="main-nav__sublist-item subgroup">
+                                        <a href="#" class="main-nav__sublink main-nav__sublink--title">Подарочные сертификаты</a>
+                                    </li>
+                                    <li class="main-nav__sublist-item subgroup">
+                                        <a href="#" class="main-nav__sublink main-nav__sublink--title">Скоро в продаже</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="#" class="main-nav__link main-nav__link--mytovar"><span class="main-nav__link-text">Мои товары <span class="main-tovar-index">5</span></span></a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="#" class="main-nav__link"><span class="main-nav__link-text">О сервисе</span></a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="#" class="main-nav__link"><span class="main-nav__link-text">Отзывы</span></a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a href="#" class="main-nav__link"><span class="main-nav__link-text">Блог</span></a>
                             </li>
                         </ul>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#" class="main-nav__link">Мои товары</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#" class="main-nav__link">О сервисе</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#" class="main-nav__link">Отзывы</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a href="#" class="main-nav__link">Блог</a>
-                    </li>
-                </ul>
-            </nav>
+                    </nav>
+                </div>
+            </div>
+            
             <div class="inout">
                 <!--Если неавторизированный пользователь-->
-                <button class="button btn__in">Войти</button>
-                <!--Если авторизированный как покупатель-->
+                <button class="text-btn btn__in">Войти</button>
+                <!--Если авторизированный как покупатель
                 <button class="button btn__avatar">
                     <img src="./img/ava_mini.jpg" alt="" class="header-avatar">
                 </button>
@@ -78,40 +138,747 @@
                             <button class="btn-exit">Выход</button>
                         </div>
                     </div>
-                </div>
-                <!--Если авторизированный как продавец-->
+                </div> 
+                -->
+                <!--Если авторизированный как продавец
                 <a href="#" class="button btn__avatar">
                     <img src="./img/ava_magaz.jpg" alt="" class="header-avatar">
                 </a>
+                -->
             </div>
         </div>
     </header>
     <main class="main">
-        <section class="section slider">
+        <section class="section section--main section--first-slider">
+            <div class="container container-slaid">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                    <div class="slaid swiper-slide">
+                        <div class="slaid__content-wrapper">
+                            <img src="/img/slaid_1.png" alt="" class="slaid__img">
+                            <div class="slaid-data">  
+                                <div class="slaid__content">
+                                    <strong class="slaid__title">Учавствуй в аукционе и покупай самые популярные товары со скидкой</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slaid swiper-slide">  
+                        <div class="slaid__content-wrapper">
+                            <img src="/img/slaid_2.png" alt="" class="slaid__img">
+                            <div class="slaid-data">  
+                                <div class="slaid__content">
+                                    <strong class="slaid__title">Уй популярные товары со скидкой</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+            </div>
+        </section>
+        <section class="section section--main section--popular-goods">
+            <div class="container">
+                <h3 class="section-title section-title--main">Популярные товары</h3>
+                <ul class="list-card">
+                    <li class="list-card__item">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card__slider">
+                                    <div class="card__swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar1.png" alt="" class="slaid__img">
+                                            </div>
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar2.png" alt="" class="slaid__img">
+                                            </div>
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar3.png" alt="" class="slaid__img">
+                                            </div>
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar4.png" alt="" class="slaid__img">
+                                            </div>
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar2.png" alt="" class="slaid__img">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>                        
+                                    </div>
+                                </div>
+                                <div class="card__data-tovar data-tovar">
+                                    <div class="data-tovar__brand">
+                                        <img src="/img/logo_dns.png" alt="">
+                                    </div>
+                                    <h3 class="data-tovar__title">
+                                        <strong>Смартфон</strong> Apple iPhone 13 256GB, синий
+                                    </h3>
+                                    <ul class="data-tovar__note list-characteristics">
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Тип:</span> 
+                                            <span class="list-characteristics__data">Смартфон</span>
+                                        </li>
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Диагональ экрана, дюймы:</span> 
+                                            <span class="list-characteristics__data">6.1</span>
+                                        </li>
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Встроенная память:</span> 
+                                            <span class="list-characteristics__data">256 ГБ</span>
+                                        </li>
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Разрешение основной камеры, Мпикс:</span> 
+                                            <span class="list-characteristics__data">12</span>
+                                        </li>
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Процессор:</span> 
+                                            <span class="list-characteristics__data">A15 Bionic (6 ядер), 2.99 ГГц</span>
+                                        </li>
+                                    </ul>
+                                    <div class="data-tovar__link-detail">
+                                        <a href="#" class="link-detail">Подробнее</a>
+                                    </div>
+                                    <div class="data-tovar__info-prodovan">
+                                        <a href="#" class="link-prodovan">Информация о продавце</a>
+                                    </div>
+                                </div>
+                                <div class="card__auction">
+                                    <div class="add-favorites">
+                                        <button class="btn-add-favorites btn-add-favorites--active">
+                                            <svg class="btn-add-favorites__icon" width="105" height="91" viewBox="0 0 105 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M48.9663 17.2339C50.9189 19.1865 54.0847 19.1865 56.0373 17.2339L61.6167 11.6545C70.2684 3.00278 84.2957 3.00278 92.9474 11.6545C101.599 20.3062 101.599 34.3334 92.9474 42.9851L52.5018 83.4307L12.0562 42.9851C3.40448 34.3334 3.40448 20.3062 12.0562 11.6545C20.7079 3.00278 34.7351 3.00278 43.3868 11.6545L48.9663 17.2339Z"  stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <ul class="data-auction">
+                                        <li class="data-auction__item">
+                                            <div class="data-auction__name">Стартовая цена:</div>
+                                            <div class="data-auction__data">86&nbsp;000&nbsp;р</div>
+                                        </li>
+                                        <li class="data-auction__item">
+                                            <div class="data-auction__name">Продано билетов:</div>
+                                            <div class="data-auction__data">
+                                                <div class="auction-progress progress">
+                                                    <span class="progress__line"><span class="progress__line_go" style="width:82%"></span></span>
+                                                    <span class="progress__proc">82%</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="data-auction__item">
+                                            <div class="data-auction__name">Стоимость билета:</div>
+                                            <div class="data-auction__data">200&nbsp;р</div>
+                                        </li>
+                                        <li class="data-auction__item data-auction__item--int">
+                                            <div class="data-auction__name">Куплю смартфон по цене:</div>
+                                            <div class="data-auction__data">
+                                                <span class="empty-myprice">Введите цену</span>&nbsp;р
+                                            </div>
+                                        </li>
+                                        <li class="data-auction__item data-auction__item--int">
+                                            <div class="data-auction__name">Моя скидка: </div>
+                                            <div class="data-auction__data">-71%</div>
+                                        </li>
+                                    </ul>
+                                    <button class="card__btn">Купить билет</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
 
-        </section>
-        <section class="section popular-goods">
-            <div class="container">
-                <h3 class="section-title">Популярные товары</h3>
+                    <li class="list-card__item">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card__slider">
+                                    <div class="card__swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar1.png" alt="" class="slaid__img">
+                                            </div>
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar2.png" alt="" class="slaid__img">
+                                            </div>
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar3.png" alt="" class="slaid__img">
+                                            </div>
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar4.png" alt="" class="slaid__img">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>                        
+                                    </div>
+                                </div>
+                                <div class="card__data-tovar data-tovar">
+                                    <div class="data-tovar__brand">
+                                        <img src="/img/logo_dns.png" alt="">
+                                    </div>
+                                    <h3 class="data-tovar__title">
+                                        <strong>Смартфон</strong> Apple iPhone 13 256GB, синий
+                                    </h3>
+                                    <ul class="data-tovar__note list-characteristics">
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Тип:</span> 
+                                            <span class="list-characteristics__data">Смартфон</span>
+                                        </li>
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Диагональ экрана, дюймы:</span> 
+                                            <span class="list-characteristics__data">6.1</span>
+                                        </li>
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Встроенная память:</span> 
+                                            <span class="list-characteristics__data">256 ГБ</span>
+                                        </li>
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Разрешение основной камеры, Мпикс:</span> 
+                                            <span class="list-characteristics__data">12</span>
+                                        </li>
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Процессор:</span> 
+                                            <span class="list-characteristics__data">A15 Bionic (6 ядер), 2.99 ГГц</span>
+                                        </li>
+                                    </ul>
+                                    <div class="data-tovar__link-detail">
+                                        <a href="#" class="link-detail">Подробнее</a>
+                                    </div>
+                                    <div class="data-tovar__info-prodovan">
+                                        <a href="#" class="link-prodovan">Информация о продавце</a>
+                                    </div>
+                                </div>
+                                <div class="card__auction">
+                                    <div class="add-favorites">
+                                        <button class="btn-add-favorites">
+                                            <svg class="btn-add-favorites__icon" width="105" height="91" viewBox="0 0 105 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M48.9663 17.2339C50.9189 19.1865 54.0847 19.1865 56.0373 17.2339L61.6167 11.6545C70.2684 3.00278 84.2957 3.00278 92.9474 11.6545C101.599 20.3062 101.599 34.3334 92.9474 42.9851L52.5018 83.4307L12.0562 42.9851C3.40448 34.3334 3.40448 20.3062 12.0562 11.6545C20.7079 3.00278 34.7351 3.00278 43.3868 11.6545L48.9663 17.2339Z"  stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <ul class="data-auction">
+                                        <li class="data-auction__item">
+                                            <div class="data-auction__name">Стартовая цена:</div>
+                                            <div class="data-auction__data">86&nbsp;000&nbsp;р</div>
+                                        </li>
+                                        <li class="data-auction__item">
+                                            <div class="data-auction__name">Продано билетов:</div>
+                                            <div class="data-auction__data">
+                                                <div class="auction-progress progress">
+                                                    <span class="progress__line"><span class="progress__line_go" style="width:21%"></span></span>
+                                                    <span class="progress__proc">21%</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="data-auction__item">
+                                            <div class="data-auction__name">Стоимость билета:</div>
+                                            <div class="data-auction__data">200&nbsp;р</div>
+                                        </li>
+                                        <li class="data-auction__item data-auction__item--int">
+                                            <div class="data-auction__name">Куплю смартфон по цене:</div>
+                                            <div class="data-auction__data">
+                                                <span class="my-myprice">100&nbsp;000</span>&nbsp;р
+                                            </div>
+                                        </li>
+                                        <li class="data-auction__item data-auction__item--int">
+                                            <div class="data-auction__name">Моя скидка: </div>
+                                            <div class="data-auction__data">-71%</div>
+                                        </li>
+                                    </ul>
+                                    <button class="card__btn">Изменить цену</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-card__item">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card__slider">
+                                    <div class="card__swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar1.png" alt="" class="slaid__img">
+                                            </div>
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar2.png" alt="" class="slaid__img">
+                                            </div>
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar3.png" alt="" class="slaid__img">
+                                            </div>
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar4.png" alt="" class="slaid__img">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>                        
+                                    </div>
+                                </div>
+                                <div class="card__data-tovar data-tovar">
+                                    <div class="data-tovar__brand">
+                                        <img src="/img/logo_dns.png" alt="">
+                                    </div>
+                                    <h3 class="data-tovar__title">
+                                        <strong>Смартфон</strong> Apple iPhone 13 256GB, синий
+                                    </h3>
+                                    <ul class="data-tovar__note list-characteristics">
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Тип:</span> 
+                                            <span class="list-characteristics__data">Смартфон</span>
+                                        </li>
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Диагональ экрана, дюймы:</span> 
+                                            <span class="list-characteristics__data">6.1</span>
+                                        </li>
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Встроенная память:</span> 
+                                            <span class="list-characteristics__data">256 ГБ</span>
+                                        </li>
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Разрешение основной камеры, Мпикс:</span> 
+                                            <span class="list-characteristics__data">12</span>
+                                        </li>
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Процессор:</span> 
+                                            <span class="list-characteristics__data">A15 Bionic (6 ядер), 2.99 ГГц</span>
+                                        </li>
+                                    </ul>
+                                    <div class="data-tovar__link-detail">
+                                        <a href="#" class="link-detail">Подробнее</a>
+                                    </div>
+                                    <div class="data-tovar__info-prodovan">
+                                        <a href="#" class="link-prodovan">Информация о продавце</a>
+                                    </div>
+                                </div>
+                                <div class="card__auction">
+                                    <div class="add-favorites">
+                                        <button class="btn-add-favorites">
+                                            <svg class="btn-add-favorites__icon" width="105" height="91" viewBox="0 0 105 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M48.9663 17.2339C50.9189 19.1865 54.0847 19.1865 56.0373 17.2339L61.6167 11.6545C70.2684 3.00278 84.2957 3.00278 92.9474 11.6545C101.599 20.3062 101.599 34.3334 92.9474 42.9851L52.5018 83.4307L12.0562 42.9851C3.40448 34.3334 3.40448 20.3062 12.0562 11.6545C20.7079 3.00278 34.7351 3.00278 43.3868 11.6545L48.9663 17.2339Z"  stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <ul class="data-auction">
+                                        <li class="data-auction__item">
+                                            <div class="data-auction__name">Стартовая цена:</div>
+                                            <div class="data-auction__data">86&nbsp;000&nbsp;р</div>
+                                        </li>
+                                        <li class="data-auction__item">
+                                            <div class="data-auction__name">Продано билетов:</div>
+                                            <div class="data-auction__data">
+                                                <div class="auction-progress progress">
+                                                    <span class="progress__line"><span class="progress__line_go" style="width:5%"></span></span>
+                                                    <span class="progress__proc">5%</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="data-auction__item">
+                                            <div class="data-auction__name">Стоимость билета:</div>
+                                            <div class="data-auction__data">200&nbsp;р</div>
+                                        </li>
+                                        <li class="data-auction__item data-auction__item--int">
+                                            <div class="data-auction__name">Куплю смартфон по цене:</div>
+                                            <div class="data-auction__data">
+                                                <span class="my-myprice">100&nbsp;000</span>&nbsp;р
+                                            </div>
+                                        </li>
+                                        <li class="data-auction__item data-auction__item--int">
+                                            <div class="data-auction__name">Моя скидка: </div>
+                                            <div class="data-auction__data">-71%</div>
+                                        </li>
+                                    </ul>
+                                    <button class="card__btn">Изменить цену</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
-        <section class="section on-sale-soon">
+        <section class="section section--main section--on-sale-soon">
             <div class="container">
-                <h3 class="section-title">Скоро в продаже</h3>
+                <h3 class="section-title section-title--main">Скоро в продаже</h3>
+                <ul class="list-card">
+                    <li class="list-card__item">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card__slider">
+                                    <div class="card__swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar1.png" alt="" class="slaid__img">
+                                            </div>
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar2.png" alt="" class="slaid__img">
+                                            </div>
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar3.png" alt="" class="slaid__img">
+                                            </div>
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar4.png" alt="" class="slaid__img">
+                                            </div>
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar2.png" alt="" class="slaid__img">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>                        
+                                    </div>
+                                </div>
+                                <div class="card__data-tovar data-tovar">
+                                    <div class="data-tovar__brand">
+                                        <img src="/img/logo_dns.png" alt="">
+                                    </div>
+                                    <h3 class="data-tovar__title">
+                                        <strong>Смартфон</strong> Apple iPhone 13 256GB, синий
+                                    </h3>
+                                    <ul class="data-tovar__note list-characteristics">
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Тип:</span> 
+                                            <span class="list-characteristics__data">Смартфон</span>
+                                        </li>
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Диагональ экрана, дюймы:</span> 
+                                            <span class="list-characteristics__data">6.1</span>
+                                        </li>
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Встроенная память:</span> 
+                                            <span class="list-characteristics__data">256 ГБ</span>
+                                        </li>
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Разрешение основной камеры, Мпикс:</span> 
+                                            <span class="list-characteristics__data">12</span>
+                                        </li>
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Процессор:</span> 
+                                            <span class="list-characteristics__data">A15 Bionic (6 ядер), 2.99 ГГц</span>
+                                        </li>
+                                    </ul>
+                                    <div class="data-tovar__link-detail">
+                                        <a href="#" class="link-detail">Подробнее</a>
+                                    </div>
+                                    <div class="data-tovar__info-prodovan">
+                                        <a href="#" class="link-prodovan">Информация о продавце</a>
+                                    </div>
+                                </div>
+                                <div class="card__auction">
+                                    <div class="add-favorites">
+                                        <button class="btn-add-favorites btn-add-favorites--active">
+                                            <svg class="btn-add-favorites__icon" width="105" height="91" viewBox="0 0 105 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M48.9663 17.2339C50.9189 19.1865 54.0847 19.1865 56.0373 17.2339L61.6167 11.6545C70.2684 3.00278 84.2957 3.00278 92.9474 11.6545C101.599 20.3062 101.599 34.3334 92.9474 42.9851L52.5018 83.4307L12.0562 42.9851C3.40448 34.3334 3.40448 20.3062 12.0562 11.6545C20.7079 3.00278 34.7351 3.00278 43.3868 11.6545L48.9663 17.2339Z"  stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="count-down-to-start">
+                                        <h3 class="count-down-to-start__title">Аукцион начнется через:</h3>
+                                        <div class="timer timer-1" data-datstart="2023, 00, 01">
+                                            <div class="timer__items">
+                                              <div class="timer__item timer__days">00</div>
+                                              <div class="timer__item timer__hours">00</div>
+                                              <div class="timer__item timer__minutes">00</div>
+                                              <div class="timer__item timer__seconds">00</div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-card__item">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card__slider">
+                                    <img src="./img/ozon.png" alt="">
+                                </div>
+                                <div class="card__data-tovar data-tovar">
+                                    <div class="data-tovar__brand">
+                                        <img src="/img/ozon-logo.png" alt="">
+                                    </div>
+                                    <h3 class="data-tovar__title">
+                                        подарочный сертификат
+                                    </h3>
+                                    <ul class="data-tovar__note list-characteristics">
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Номинал:</span> 
+                                            <span class="list-characteristics__data">30&nbsp;000&nbsp;р</span>
+                                        </li>
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Бренд:</span> 
+                                            <span class="list-characteristics__data">Ozon</span>
+                                        </li>
+                                    </ul>
+                                    <div class="data-tovar__link-detail">
+                                        <a href="#" class="link-detail">Подробнее</a>
+                                    </div>
+                                    <div class="data-tovar__info-prodovan">
+                                        <a href="#" class="link-prodovan">Информация о продавце</a>
+                                    </div>
+                                </div>
+                                <div class="card__auction">
+                                    <div class="add-favorites">
+                                        <button class="btn-add-favorites">
+                                            <svg class="btn-add-favorites__icon" width="105" height="91" viewBox="0 0 105 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M48.9663 17.2339C50.9189 19.1865 54.0847 19.1865 56.0373 17.2339L61.6167 11.6545C70.2684 3.00278 84.2957 3.00278 92.9474 11.6545C101.599 20.3062 101.599 34.3334 92.9474 42.9851L52.5018 83.4307L12.0562 42.9851C3.40448 34.3334 3.40448 20.3062 12.0562 11.6545C20.7079 3.00278 34.7351 3.00278 43.3868 11.6545L48.9663 17.2339Z"  stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="count-down-to-start">
+                                        <h3 class="count-down-to-start__title">Аукцион начнется через:</h3>
+                                        <div class="timer timer-1" data-datstart="2023, 00, 01">
+                                            <div class="timer__items">
+                                              <div class="timer__item timer__days">00</div>
+                                              <div class="timer__item timer__hours">00</div>
+                                              <div class="timer__item timer__minutes">00</div>
+                                              <div class="timer__item timer__seconds">00</div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
             </div>
         </section>
-        <section class="section auction-finished">
+        <section class="section section--main section--auction-finished">
             <div class="container">
-                <h3 class="section-title">Аукцион завершен</h3>
+                <h3 class="section-title section-title--main">Аукцион завершен</h3>
+                <ul class="list-card">
+                    <li class="list-card__item">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card__slider">
+                                    <div class="card__swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar1.png" alt="" class="slaid__img">
+                                            </div>
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar2.png" alt="" class="slaid__img">
+                                            </div>
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar3.png" alt="" class="slaid__img">
+                                            </div>
+                                            <div class="slaid swiper-slide">
+                                                <img src="/img/tovar4.png" alt="" class="slaid__img">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>                        
+                                    </div>
+                                </div>
+                                <div class="card__data-tovar data-tovar">
+                                    <div class="data-tovar__brand">
+                                        <img src="/img/logo_dns.png" alt="">
+                                    </div>
+                                    <h3 class="data-tovar__title">
+                                        <strong>Смартфон</strong> Apple iPhone 13 256GB, синий
+                                    </h3>
+                                    <ul class="data-tovar__note list-characteristics">
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Тип:</span> 
+                                            <span class="list-characteristics__data">Смартфон</span>
+                                        </li>
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Диагональ экрана, дюймы:</span> 
+                                            <span class="list-characteristics__data">6.1</span>
+                                        </li>
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Встроенная память:</span> 
+                                            <span class="list-characteristics__data">256 ГБ</span>
+                                        </li>
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Разрешение основной камеры, Мпикс:</span> 
+                                            <span class="list-characteristics__data">12</span>
+                                        </li>
+                                        <li class="list-characteristics__item">
+                                            <span class="list-characteristics__name">Процессор:</span> 
+                                            <span class="list-characteristics__data">A15 Bionic (6 ядер), 2.99 ГГц</span>
+                                        </li>
+                                    </ul>
+                                    <div class="data-tovar__link-detail">
+                                        <a href="#" class="link-detail">Подробнее</a>
+                                    </div>
+                                    <div class="data-tovar__info-prodovan">
+                                        <a href="#" class="link-prodovan">Информация о продавце</a>
+                                    </div>
+                                </div>
+                                <div class="card__auction fin-auction">
+                                    <h3 class="fin-auction__title">Аукцион завершен</h3>
+                                    <ul class="data-auction">
+                                        <li class="data-auction__item">
+                                            <div class="data-auction__name">Стартовая цена:</div>
+                                            <div class="data-auction__data">86&nbsp;000&nbsp;р</div>
+                                        </li>
+                                        <li class="data-auction__item data-auction__item--int">
+                                            <div class="data-auction__name">Цена покупки:</div>
+                                            <div class="data-auction__data">
+                                                <span class="my-myprice">3&nbsp;000</span>&nbsp;р
+                                            </div>
+                                        </li>
+                                        <li class="data-auction__item data-auction__item--int">
+                                            <div class="data-auction__name">Скидка: </div>
+                                            <div class="data-auction__data">-97%</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container footer__container">
             <nav class="footer-nav">
-
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Электроника</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Спорт и отдых</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Подарочные сертификаты</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Скоро в продаже</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Продавцы</a>
+                    </li>
+                </ul>
             </nav>
+
+            <nav class="footer-dopnav">
+                <ul class="footer-dopnav__list">
+                    <li class="footer-dopnav__item">
+                        <a class="footer-dopnav__link" href="#">Продавайте на elmace</a>
+                    </li>
+                    <li class="footer-dopnav__item">
+                        <a class="footer-dopnav__link" href="#">О сервисе</a>
+                    </li>
+                    <li class="footer-dopnav__item">
+                        <a class="footer-dopnav__link" href="#">Отзывы</a>
+                    </li>
+                    <li class="footer-dopnav__item">
+                        <a class="footer-dopnav__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="cop-blok">
+                <div class="footer_logo">
+                    <img class="footer_logo__img" src="/img/logo_footer.svg">
+                </div>
+                <div class="copirait">
+                    © 2022 ООО «Элмейс».<br>
+                    Все права защищены
+                </div>
+                <div class="footer__cont">
+                    <a href="tel:+78002504530" class="footer-link-phone">8&nbsp;800&nbsp;250&nbsp;45&nbsp;30</a>
+                    <ul class="insocial">
+                        <li class="insocial__item">
+                            <a href="#" class="insocial__link">
+                                <img class="insocial__img" src="./img/icon_vk.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="insocial__item">
+                            <a href="#" class="insocial__link">
+                                <img class="insocial__img" src="./img/icon_insta.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="insocial__item">
+                            <a href="#" class="insocial__link">
+                                <img class="insocial__img" src="./img/icon_youtube.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        effect: 'fade',
+        autoplay: {delay: 5000},
+        speed: 800, 
+        pagination: {
+            el: '.swiper-container .swiper-pagination',
+            clickable: true
+        },
+        navigation: {
+        nextEl: '.swiper-container .swiper-button-next',
+        prevEl: '.swiper-container .swiper-button-prev',
+        },
+        scrollbar: {
+            el: '.swiper-container .swiper-scrollbar',
+        }
+    });
+    </script>  
+    <script>
+        var card_swiper = new Swiper('.card__swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        effect: 'slide',
+        autoplay: {delay: 5000},
+        speed: 800, 
+        pagination: {
+            el: '.card__swiper-container .swiper-pagination',
+            clickable: true
+        },
+        navigation: {
+        nextEl: '.card__swiper-container .swiper-button-next',
+        prevEl: '.card__swiper-container .swiper-button-prev',
+        },
+        scrollbar: {
+            el: '.card__swiper-container .swiper-scrollbar',
+        }
+    });
+    </script> 
+   
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  // конечная дата, например 1 июля 2021
+  const deadline = new Date(2023, 00, 01);
+  // id таймера
+  let timerId = null;
+  // склонение числительных
+  function declensionNum(num, words) {
+    return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
+  }
+  // вычисляем разницу дат и устанавливаем оставшееся времени в качестве содержимого элементов
+  function countdownTimer() {
+    const diff = deadline - new Date();
+    if (diff <= 0) {
+      clearInterval(timerId);
+    }
+    const days = diff > 0 ? Math.floor(diff / 1000 / 60 / 60 / 24) : 0;
+    const hours = diff > 0 ? Math.floor(diff / 1000 / 60 / 60) % 24 : 0;
+    const minutes = diff > 0 ? Math.floor(diff / 1000 / 60) % 60 : 0;
+    const seconds = diff > 0 ? Math.floor(diff / 1000) % 60 : 0;
+    $days.textContent = days < 10 ? '0' + days : days;
+    $hours.textContent = hours < 10 ? '0' + hours : hours;
+    $minutes.textContent = minutes < 10 ? '0' + minutes : minutes;
+    $seconds.textContent = seconds < 10 ? '0' + seconds : seconds;
+    $days.dataset.title = declensionNum(days, ['день', 'дня', 'дней']);
+    $hours.dataset.title = declensionNum(hours, ['час', 'часа', 'часов']);
+    $minutes.dataset.title = declensionNum(minutes, ['минута', 'минуты', 'минут']);
+    $seconds.dataset.title = declensionNum(seconds, ['секунда', 'секунды', 'секунд']);
+  }
+  // получаем элементы, содержащие компоненты даты
+  const $days = document.querySelector('.timer__days');
+  const $hours = document.querySelector('.timer__hours');
+  const $minutes = document.querySelector('.timer__minutes');
+  const $seconds = document.querySelector('.timer__seconds');
+  // вызываем функцию countdownTimer
+  countdownTimer();
+  // вызываем функцию countdownTimer каждую секунду
+  timerId = setInterval(countdownTimer, 1000);
+});
+    </script>
+
 </body>
 </html>
